@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CommentsHeader = ({length, activeSort, sort}) => (
+const CommentsHeader = ({ length, activeSort, sort }) => (
   <div className='comments-header'>
     <div className='pull-right'>
       <a onClick={() => sort('best')} href='#' className={activeSort === 'best' ? 'active' : 'text-muted'}>Best</a> |

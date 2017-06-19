@@ -4,7 +4,7 @@ const comments = {
     { id: 1,
       added: '2017-06-19T00:10:10.795Z',
       username: 'User1',
-      body: 'Even in these scenarios though, you can usually skirt away and clear the board.',
+      body: "Even in these scenarios though, you can usually skirt away and clear the board.",
       rating: 0,
       parent: null,
       children: [
@@ -37,7 +37,7 @@ const comments = {
     { id: 2,
       added: '2017-06-19T00:11:10.795Z',
       username: 'User-name',
-      body: 'Of course, but despite what one would guess initially, this deck\'s playstyle lends itself to remarkable consistency due to its ability to stabilize. The only really bad position is when you go first and you don\'t have a natural selection or flash reincarnation. Even in these scenarios though, you can usually skirt away and clear the board. Another point of consistency is that when you\'re in end game, you\'ll never be plagued by drawing 2-3 drops every other deck runs. You\'ll always get a power creature or removal.',
+      body: "Of course, but despite what one would guess initially, this deck's playstyle lends itself to remarkable consistency due to its ability to stabilize. The only really bad position is when you go first and you don't have a natural selection or flash reincarnation. Even in these scenarios though, you can usually skirt away and clear the board. Another point of consistency is that when you're in end game, you'll never be plagued by drawing 2-3 drops every other deck runs. You'll always get a power creature or removal.",
       rating: 22,
       parent: null,
       children: null

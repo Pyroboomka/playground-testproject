@@ -100,12 +100,13 @@ class App extends Component {
           <CommentsHeader length={this.state.total}
             activeSort={this.state.activeSort}
             sort={this.sortComments.bind(this)}
-             />
+          />
           {this.state.comments.map(item => {
             return item.children === null
             ? <Comment key={item.id} {...item} />
             : <CommentWithChildren key={item.id} parentComment={item} childrenComments={item.children} />
           })}
+          <button className='btn btn-block'>More...</button>
         </div>
       </div>
     )

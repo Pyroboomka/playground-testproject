@@ -1,11 +1,9 @@
 import React from 'react'
-import { withProps, compose } from 'recompose'
+import { withProps } from 'recompose'
 import { differenceInMinutes } from 'date-fns'
 
-const enhance = compose(
-  withProps(
-    props => ({ formattedDate: differenceInMinutes(new Date(), new Date(props.added)) })
-  )
+const enhance = withProps(
+  props => ({ formattedDate: differenceInMinutes(new Date(), new Date(props.added)) })
 )
 
 const Comment = ({ username, body, rating, formattedDate }) => (
