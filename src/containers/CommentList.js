@@ -19,6 +19,7 @@ class App extends Component {
   }
 
   componentWillMount () {
+    const parseComments = ({ data }) => data
     /* I assume comments come parsed in parent/children format,
       as I defined them in mock.
       If not, i'll have to reparse theme here for react-way state
@@ -29,10 +30,6 @@ class App extends Component {
       total: fetchedComments.length,
       comments: parsedComments
     })
-    function parseComments (commentList) {
-      //  noop() because of the comment above
-      return commentList.data
-    }
   }
 
   submitNewComment (comment) {
@@ -90,9 +87,8 @@ class App extends Component {
         })
         break
       }
-      default: {
+      default:
         break
-      }
     }
   }
 
