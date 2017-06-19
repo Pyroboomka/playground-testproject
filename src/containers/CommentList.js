@@ -22,7 +22,7 @@ class App extends Component {
     const parseComments = ({ data }) => data
     /* I assume comments come parsed in parent/children format,
       as I defined them in mock.
-      If not, i'll have to reparse theme here for react-way state
+      If not, I'll have to reparse them for react-way state
     */
     const fetchedComments = JSON.parse(json)
     const parsedComments = parseComments(fetchedComments)
